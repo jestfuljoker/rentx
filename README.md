@@ -1,25 +1,82 @@
-# Boilerplate for backend Node APIS
+# Rental X
 
-This boilerplate was created to streamline the construction of APIs in Node with typescript and express.
-Configured Prettier, ESLINT and dotenv.
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Chriszao/rentalx?color=%2304D361" />
 
-## Project structure 🔧
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/progress-15%25-brightgreen.svg" alt="Progress">
+  </a>
 
-Folder structure:
+  <a href="https://github.com/Chriszao/rentalx/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Chriszao/rentalx">
+  </a>
 
-`config` - external library settings such as authentication, upload, email, etc.
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
-`modules` - they cover application knowledge areas directly related to business rules. At first we will create the following modules in the application: customers, products, orders and users.
+> Está API está sendo desenvolvida para um sistema de alugueis de carros.
 
-`shared` - general purpose modules shared with more than one application module, such as server.ts file, main route file, database connection, etc.
+### Ajustes e melhorias
 
-`services` - will be within each application module and will be responsible for all the rules that the application needs to meet.
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-## Tools
+- [ ] CRUD de categorias
+- [ ] CRUD de especificações
+- [ ] CRUD dos carros
+- [ ] CRUD dos aluguéis
+- [ ] CRUD dos usuários
+- [ ] Upload de imagens
+- [ ] Testes automatizados
 
-- [Node.js](https://nodejs.org/en/);
-- [ESLINT](https://eslint.org/docs/user-guide/getting-started);
-- [Prettier](https://prettier.io/docs/en/install.html);
-- [Typescript](https://www.typescriptlang.org/docs/);
+## 💻 Pré-requisitos
 
-Made with 💜 by **Christofer Assis**
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+* Você precisa instalar o NodeJs V14.x+
+
+## 🚀 Rodando Rental X
+
+Para rodar o rental x, siga estas etapas:
+
+Baixe o projeto e instale as dependências:
+
+```bash
+# Clone este repositório
+git clone https://github.com/Chriszao/rentalx.git
+
+# Entre na pasta do projeto
+cd rentalx
+
+# instale as dependências
+npm install | yarn install
+
+```
+
+## ☕ Usando Rental X
+
+Para usar rental x, siga estas etapas:
+
+```
+<!-- work in progress -->
+```
+
+## 📫 Contribuindo para Rental X
+Para contribuir com rental x, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+<p align="center">
+  Developed with 💙 by <strong>Chriszao</strong>
+</p>
+
+[⬆ Voltar ao topo](#RentalX)<br>
