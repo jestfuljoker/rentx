@@ -1,14 +1,14 @@
-# Rental X
+# RentX
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Chriszao/rentalx?color=%2304D361" />
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Chriszao/rentx?color=%2304D361" />
 
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/progress-15%25-brightgreen.svg" alt="Progress">
   </a>
 
-  <a href="https://github.com/Chriszao/rentalx/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Chriszao/rentalx">
+  <a href="https://github.com/Chriszao/rentx/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Chriszao/rentx">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
@@ -34,34 +34,34 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 * Você precisa instalar o NodeJs V14.x+
 
-## 🚀 Rodando Rental X
+## 🚀 Rodando RentX
 
-Para rodar o rental x, siga estas etapas:
+Para rodar o rentX, siga estas etapas:
 
 Baixe o projeto e instale as dependências:
 
 ```bash
 # Clone este repositório
-git clone https://github.com/Chriszao/rentalx.git
+git clone https://github.com/Chriszao/rentx.git
 
 # Entre na pasta do projeto
-cd rentalx
+cd rentx
 
 # instale as dependências
 npm install | yarn install
 
 ```
 
-## ☕ Usando Rental X
+## ☕ Usando RentX
 
-Para usar rental x, siga estas etapas:
+Para usar rentx, siga estas etapas:
 
 ```
 <!-- work in progress -->
 ```
 
-## 📫 Contribuindo para Rental X
-Para contribuir com rental x, siga estas etapas:
+## 📫 Contribuindo para RentX
+Para contribuir com rentx, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
@@ -79,4 +79,4 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais
   Developed with 💙 by <strong>Chriszao</strong>
 </p>
 
-[⬆ Voltar ao topo](#RentalX)<br>
+[⬆ Voltar ao topo](#RentX)<br>
