@@ -11,6 +11,8 @@ export class ListSpecificationsUseCase {
   ) {}
 
   async execute(): Promise<Specification[]> {
-    return this.specificationsRepository.list();
+    const specifications = await this.specificationsRepository.list();
+
+    return specifications;
   }
 }
