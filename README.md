@@ -20,8 +20,8 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] CRUD de categorias
-- [ ] CRUD de especificações
+- [x] CRUD de categorias
+- [x] CRUD de especificações
 - [ ] CRUD dos carros
 - [ ] CRUD dos aluguéis
 - [ ] CRUD dos usuários
