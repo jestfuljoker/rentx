@@ -7,6 +7,10 @@ export class ImportCategoriesController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { file } = request;
 
+    if (!file) {
+      throw new Error('File not provided or invalid');
+    }
+
     const importCategoriesUseCase = container.resolve(ImportCategoriesUseCase);
 
     await importCategoriesUseCase.execute(file);
