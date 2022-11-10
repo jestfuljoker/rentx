@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
+import { AppError } from '../../../../errors/AppError';
 import { ImportCategoriesUseCase } from './ImportCategoriesUseCase';
 
 export class ImportCategoriesController {
@@ -8,7 +9,7 @@ export class ImportCategoriesController {
     const { file } = request;
 
     if (!file) {
-      throw new Error('File not provided or invalid');
+      throw new AppError('File not provided or invalid');
     }
 
     const importCategoriesUseCase = container.resolve(ImportCategoriesUseCase);
