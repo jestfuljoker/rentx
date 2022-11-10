@@ -27,7 +27,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] CRUD dos usuários
   - [x] Criptografia de senha
 - [x] Autenticação JWT
-- [ ] Upload de imagens
+- [X] Upload de imagens
 - [ ] Testes automatizados
 
 ## 💻 Pré-requisitos
