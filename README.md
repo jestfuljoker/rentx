@@ -30,6 +30,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [X] Upload de imagens
 - [ ] Testes automatizados
 
+> Veja a análise de requisitos [Análise de requisitos](/docs/requirements_analysis.md)
+
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
