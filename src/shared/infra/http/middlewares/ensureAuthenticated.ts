@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
 import { verify } from 'jsonwebtoken';
 
-import { AppError } from '../errors/AppError';
-import { UsersRepository } from '../modules/accounts/repositories/implementations/UserRepository';
+import { UsersRepository } from '@modules/accounts/infra/typeorm/repositories/UserRepository';
+import { AppError } from '@shared/errors/AppError';
 
 export async function ensureAuthenticated(
   request: Request,
