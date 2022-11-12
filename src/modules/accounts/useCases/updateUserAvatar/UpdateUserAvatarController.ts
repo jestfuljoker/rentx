@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { AppError } from '../../../../errors/AppError';
+import { AppError } from '@errors/AppError';
+
 import { UpdateUserAvatarUseCase } from './UpdateUserAvatarUseCase';
 
 export class UpdateUserAvatarController {
