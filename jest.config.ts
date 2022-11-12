@@ -1,9 +1,10 @@
-/*
- * For a detailed explanation regarding each configuration property and type check, visit:
- * https://jestjs.io/docs/configuration
- */
+/* eslint-disable import/no-extraneous-dependencies */
+import { Config } from 'jest';
+import { pathsToModuleNameMapper } from 'ts-jest';
 
-export default {
+import { compilerOptions } from './tsconfig.json';
+
+const config: Config = {
   // Stop running tests after `n` failures
   bail: true,
 
@@ -21,4 +22,11 @@ export default {
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
   setupFiles: ['<rootDir>/.jest/setEnvVars.ts'],
+
+  // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/src/',
+  }),
 };
+
+export default config;
