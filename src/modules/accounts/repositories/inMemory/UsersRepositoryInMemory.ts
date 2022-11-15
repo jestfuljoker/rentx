@@ -4,11 +4,7 @@ import { User } from '@modules/accounts/infra/typeorm/entities/User';
 import { IUsersRepository } from '../IUserRepository';
 
 export class UsersRepositoryInMemory implements IUsersRepository {
-  private users: User[];
-
-  constructor() {
-    this.users = [];
-  }
+  private users: User[] = [];
 
   async create(data: ICreateUserDTO): Promise<void> {
     const user = new User();
