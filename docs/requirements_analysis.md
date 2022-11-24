@@ -20,9 +20,9 @@
 **Requisito Funcional**
 
 - Deve ser possível listar todos os carros disponíveis;
-- Deve ser possível listar todas os carros pleo nome da categoria;
-- Deve ser possível listar todas os carros pleo nome da marca;
-- Deve ser possível listar todas os carros pleo nome do carro;
+- Deve ser possível listar todas os carros pelo nome da categoria;
+- Deve ser possível listar todas os carros pelo nome da marca;
+- Deve ser possível listar todas os carros pelo nome do carro;
 
 
 **Regra de negócio**
