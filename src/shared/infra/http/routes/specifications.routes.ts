@@ -4,15 +4,19 @@ import { CreateSpecificationController } from '@modules/cars/useCases/createSpec
 import { ListSpecificationsController } from '@modules/cars/useCases/listSpecifications/ListSpecificationsController';
 
 import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
+import { ensureIsAdmin } from '../middlewares/ensureIsAdmin';
 
 const specificationsRoutes = Router();
 
 const createSpecificationController = new CreateSpecificationController();
 const listSpecificationsController = new ListSpecificationsController();
 
-specificationsRoutes.use(ensureAuthenticated);
-
-specificationsRoutes.post('/', createSpecificationController.handle);
+specificationsRoutes.post(
+  '/',
+  ensureAuthenticated,
+  ensureIsAdmin,
+  createSpecificationController.handle,
+);
 
 specificationsRoutes.get('/', listSpecificationsController.handle);
 
