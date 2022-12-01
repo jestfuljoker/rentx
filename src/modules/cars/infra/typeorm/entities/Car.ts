@@ -3,12 +3,15 @@ import {
   CreateDateColumn,
   Entity,
   JoinColumn,
+  JoinTable,
+  ManyToMany,
   ManyToOne,
   PrimaryColumn,
 } from 'typeorm';
 import { v4 as uuidV4 } from 'uuid';
 
 import { Category } from './Category';
+import { Specification } from './Specification';
 
 @Entity('cars')
 export class Car {
@@ -39,6 +42,14 @@ export class Car {
   @JoinColumn({ name: 'categoryId' })
   @ManyToOne(() => Category)
   category: Category;
+
+  @JoinTable({
+    name: 'specificationsCars',
+    joinColumns: [{ name: 'carId' }],
+    inverseJoinColumns: [{ name: 'specificationId' }],
+  })
+  @ManyToMany(() => Specification)
+  specifications: Specification[];
 
   @Column()
   categoryId: string;
