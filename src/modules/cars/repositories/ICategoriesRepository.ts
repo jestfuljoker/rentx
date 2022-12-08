@@ -8,5 +8,8 @@ export interface ICreateCategoryDTO {
 export interface ICategoriesRepository {
   findByName(name: string): Promise<Category | undefined>;
   list(): Promise<Category[]>;
-  create({ name, description }: ICreateCategoryDTO): Promise<void>;
+  /**
+   * Saves a given entity in the database. If entity does not exist in the database then inserts, otherwise updates.
+   */
+  mutate({ name, description }: ICreateCategoryDTO): Promise<void>;
 }

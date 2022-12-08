@@ -12,7 +12,7 @@ export class CarsRepository implements ICarsRepository {
     this.repository = getRepository(Car);
   }
 
-  async create(data: ICreateCarDTO): Promise<Car> {
+  async mutate(data: ICreateCarDTO): Promise<Car> {
     const car = this.repository.create(data);
 
     await this.repository.save(car);
@@ -50,5 +50,11 @@ export class CarsRepository implements ICarsRepository {
     const cars = await carsQuery.getMany();
 
     return cars;
+  }
+
+  async findById(id: string): Promise<Car | undefined> {
+    const car = await this.repository.findOne(id);
+
+    return car;
   }
 }

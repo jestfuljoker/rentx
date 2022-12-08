@@ -23,6 +23,6 @@ export class CreateSpecificationUseCase {
       throw new AppError(`Specification ${name} already exists!`);
     }
 
-    await this.specificationRepository.create({ name, description });
+    await this.specificationRepository.mutate({ name, description });
   }
 }

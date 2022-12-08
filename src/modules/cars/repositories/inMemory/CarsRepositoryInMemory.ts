@@ -6,7 +6,7 @@ import { ICarsRepository } from '../ICarsRepository';
 export class CarsRepositoryInMemory implements ICarsRepository {
   private cars: Car[] = [];
 
-  async create(data: ICreateCarDTO): Promise<Car> {
+  async mutate(data: ICreateCarDTO): Promise<Car> {
     const car = new Car();
 
     Object.assign(car, data);

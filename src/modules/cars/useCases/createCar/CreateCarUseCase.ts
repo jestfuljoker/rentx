@@ -32,7 +32,7 @@ export class CreateCarUseCase {
       );
     }
 
-    const car = await this.carsRepository.create(data);
+    const car = await this.carsRepository.mutate(data);
 
     return car;
   }

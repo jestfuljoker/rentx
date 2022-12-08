@@ -52,7 +52,7 @@ export class ImportCategoriesUseCase {
       );
 
       if (!categoryAlreadyExists) {
-        await this.categoriesRepository.create({
+        await this.categoriesRepository.mutate({
           name,
           description,
         });

@@ -6,7 +6,10 @@ export interface ICreateSpecificationDTO {
 }
 
 export interface ISpecificationsRepository {
-  create({ name, description }: ICreateSpecificationDTO): Promise<void>;
+  /**
+   * Saves a given entity in the database. If entity does not exist in the database then inserts, otherwise updates.
+   */
+  mutate({ name, description }: ICreateSpecificationDTO): Promise<void>;
   findByName(name: string): Promise<Specification | undefined>;
   list(): Promise<Specification[]>;
   findByIds(ids: string[]): Promise<Specification[]>;

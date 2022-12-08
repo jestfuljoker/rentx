@@ -6,20 +6,32 @@ import {
 } from '../ISpecificationsRepository';
 
 export class SpecificationInMemory implements ISpecificationsRepository {
-  private specifications:
+  private specifications: Specification[] = [];
 
-  async create({ name, description }: ICreateSpecificationDTO): Promise<void> {
-    throw new Error('Method not implemented.');
+  async mutate({ name, description }: ICreateSpecificationDTO): Promise<void> {
+    const specification = new Specification();
+
+    Object.assign(specification, {
+      name,
+      description,
+    });
+
+    this.specifications.push(specification);
   }
+
   async findByName(name: string): Promise<Specification | undefined> {
-    throw new Error('Method not implemented.');
+    return this.specifications.find(
+      specification => specification.name === name,
+    );
   }
+
   async list(): Promise<Specification[]> {
-    throw new Error('Method not implemented.');
+    return this.specifications;
   }
+
   async findByIds(ids: string[]): Promise<Specification[]> {
-    throw new Error('Method not implemented.');
+    return this.specifications.filter(specification =>
+      ids.includes(specification.id as string),
+    );
   }
-
-
 }

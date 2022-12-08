@@ -24,6 +24,6 @@ export class CreateCategoryUseCase {
       throw new AppError(`Category "${name}" already exists!`);
     }
 
-    await this.categoriesRepository.create({ name, description });
+    await this.categoriesRepository.mutate({ name, description });
   }
 }

@@ -28,7 +28,7 @@ describe('Create car specification', () => {
   it('should be able to add a new specification to the car', async () => {
     const specificationsId = ['123', '456'];
 
-    const car = await carsRepositoryInMemory.create({
+    const car = await carsRepositoryInMemory.mutate({
       name: 'Car name',
       description: 'Car description',
       dailyRate: 100,

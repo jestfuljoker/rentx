@@ -18,7 +18,7 @@ export class CategoriesRepositoryInMemory implements ICategoriesRepository {
     return this.categories;
   }
 
-  async create({ name, description }: ICreateCategoryDTO): Promise<void> {
+  async mutate({ name, description }: ICreateCategoryDTO): Promise<void> {
     const category = new Category();
 
     Object.assign(category, {

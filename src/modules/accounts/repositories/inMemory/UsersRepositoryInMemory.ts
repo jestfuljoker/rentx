@@ -6,7 +6,7 @@ import { IUsersRepository } from '../IUserRepository';
 export class UsersRepositoryInMemory implements IUsersRepository {
   private users: User[] = [];
 
-  async create(data: ICreateUserDTO): Promise<void> {
+  async mutate(data: ICreateUserDTO): Promise<void> {
     const user = new User();
 
     Object.assign(user, data);
